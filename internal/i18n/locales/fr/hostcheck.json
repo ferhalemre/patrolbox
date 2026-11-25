@@ -1,0 +1,25 @@
+{
+  "docker.ok": "en cours, actif depuis {uptime}",
+  "docker.restarting": "bloqué en redémarrage (redémarré {count} fois)",
+  "docker.oom": "arrêté, la mémoire étant épuisée",
+  "docker.exited": "arrêté avec le code de sortie {code} alors qu'il devrait tourner",
+  "docker.unhealthy": "le contrôle de santé échoue (actif depuis {uptime})",
+  "docker.restart_loop": "redémarré {count} fois (limite {max}), actif depuis seulement {uptime}",
+  "docker.health_starting": "toujours pas opérationnel après {uptime}",
+  "docker.paused": "conteneur en pause",
+  "docker.required_missing": "le conteneur requis '{name}' ne tourne pas",
+  "docker.unavailable": "impossible de joindre Docker : {error}",
+
+  "disk.ok": "{percent} % utilisé, {free} libre ({inodes} % d'inodes)",
+  "disk.space_warn": "se remplit : {percent} % utilisé, {free} libre",
+  "disk.space_crit": "presque plein : {percent} % utilisé, {free} libre",
+  "disk.inodes_warn": "peu d'inodes restants : {percent} % utilisé, {free} libre",
+  "disk.inodes_crit": "bientôt à court d'inodes : {percent} % utilisé, {free} libre",
+  "disk.unreadable": "impossible de lire {mount} : {error}",
+
+  "backup.ok": "dernière sauvegarde {file} datant de {age}, {size}",
+  "backup.missing": "aucun fichier de sauvegarde trouvé dans {path}",
+  "backup.stale": "dernière sauvegarde {file} datant de {age} (limite {max_age})",
+  "backup.empty": "dernière sauvegarde {file} vide ({age})",
+  "backup.too_small": "dernière sauvegarde {file} ne fait que {size} (minimum {min_size})"
+}

@@ -1,0 +1,25 @@
+{
+  "docker.ok": "运行中，已运行 {uptime}",
+  "docker.restarting": "卡在重启循环中（已重启 {count} 次）",
+  "docker.oom": "因内存不足被终止",
+  "docker.exited": "已停止，退出码 {code}，但应处于运行状态",
+  "docker.unhealthy": "健康检查失败（已运行 {uptime}）",
+  "docker.restart_loop": "已重启 {count} 次（上限 {max}），仅运行 {uptime}",
+  "docker.health_starting": "运行 {uptime} 后仍不健康",
+  "docker.paused": "容器已暂停",
+  "docker.required_missing": "必需容器 '{name}' 未运行",
+  "docker.unavailable": "无法连接 Docker：{error}",
+
+  "disk.ok": "已用 {percent}%，剩余 {free}（inode 已用 {inodes}%）",
+  "disk.space_warn": "即将占满：已用 {percent}%，剩余 {free}",
+  "disk.space_crit": "几乎占满：已用 {percent}%，剩余 {free}",
+  "disk.inodes_warn": "inode 即将不足：已用 {percent}%，剩余 {free}",
+  "disk.inodes_crit": "inode 即将耗尽：已用 {percent}%，剩余 {free}",
+  "disk.unreadable": "无法读取 {mount}：{error}",
+
+  "backup.ok": "最新备份 {file} 距今 {age}，大小 {size}",
+  "backup.missing": "在 {path} 未找到备份文件",
+  "backup.stale": "最新备份 {file} 距今 {age}（上限 {max_age}）",
+  "backup.empty": "最新备份 {file} 为空（距今 {age}）",
+  "backup.too_small": "最新备份 {file} 仅 {size}（最小 {min_size}）"
+}

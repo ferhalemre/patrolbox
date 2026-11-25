@@ -1,0 +1,23 @@
+{
+  "http.ok": "HTTP {code} en {ms} ms",
+  "http.slow": "HTTP {code}, pero lento: {ms} ms (límite {limit} ms)",
+  "http.bad_status": "HTTP {code} en {ms} ms, se esperaba {max} o menos",
+  "http.missing_text": "HTTP {code}, pero la página no contiene \"{text}\"",
+  "http.timeout": "sin respuesta en {timeout} ms",
+  "http.error": "la solicitud falló: {error}",
+
+  "tls.ok": "certificado válido, caduca en {days} días ({date}), emitido por {issuer}",
+  "tls.expires_soon": "caduca en {days} días ({date}), emitido por {issuer}",
+  "tls.expires_critical": "caduca en solo {days} días ({date}), emitido por {issuer}",
+  "tls.expired": "certificado caducado hace {days} días ({date})",
+  "tls.untrusted": "el certificado no es de confianza: {error}",
+  "tls.hostname_mismatch": "el certificado no coincide con este nombre de host: {error}",
+  "tls.handshake_failed": "la conexión TLS falló: {error}",
+
+  "domain.ok": "registro válido, caduca en {days} días ({date})",
+  "domain.expires_soon": "el registro caduca en {days} días ({date})",
+  "domain.expires_critical": "el registro caduca en solo {days} días ({date})",
+  "domain.expired": "el registro caducó hace {days} días ({date})",
+  "domain.lookup_failed": "no se pudo consultar la fecha de caducidad: {error}",
+  "domain.no_expiry": "el registro no publica fecha de caducidad"
+}

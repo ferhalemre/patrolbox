@@ -1,0 +1,25 @@
+{
+  "docker.ok": "работает, время работы: {uptime}",
+  "docker.restarting": "застрял в цикле перезапусков (перезапусков: {count})",
+  "docker.oom": "остановлен: закончилась память",
+  "docker.exited": "остановлен с кодом выхода {code}, но должен работать",
+  "docker.unhealthy": "проверка работоспособности не проходит (время работы: {uptime})",
+  "docker.restart_loop": "перезапусков: {count} (лимит {max}), работает всего {uptime}",
+  "docker.health_starting": "всё ещё не в норме через {uptime}",
+  "docker.paused": "контейнер приостановлен",
+  "docker.required_missing": "обязательный контейнер '{name}' не запущен",
+  "docker.unavailable": "не удаётся связаться с Docker: {error}",
+
+  "disk.ok": "занято {percent}%, свободно {free} (inodes занято {inodes}%)",
+  "disk.space_warn": "заполняется: занято {percent}%, свободно {free}",
+  "disk.space_crit": "почти заполнен: занято {percent}%, свободно {free}",
+  "disk.inodes_warn": "мало inodes: занято {percent}%, свободно {free}",
+  "disk.inodes_crit": "inodes скоро закончатся: занято {percent}%, свободно {free}",
+  "disk.unreadable": "не удаётся прочитать {mount}: {error}",
+
+  "backup.ok": "последняя копия {file}, возраст {age}, размер {size}",
+  "backup.missing": "файлы резервных копий не найдены в {path}",
+  "backup.stale": "последняя копия {file} устарела: возраст {age} (лимит {max_age})",
+  "backup.empty": "последняя копия {file} пустая (возраст {age})",
+  "backup.too_small": "последняя копия {file} слишком мала: {size} (минимум {min_size})"
+}

@@ -1,0 +1,5 @@
+/patrolbox
+/patrolbox.yml
+/dist/
+*.test
+*.out

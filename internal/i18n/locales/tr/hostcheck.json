@@ -1,0 +1,25 @@
+{
+  "docker.ok": "çalışıyor, {uptime} süredir ayakta",
+  "docker.restarting": "yeniden başlatma döngüsüne takılmış ({count} kez yeniden başlatıldı)",
+  "docker.oom": "bellek yetersizliği nedeniyle sonlandırıldı",
+  "docker.exited": "{code} çıkış koduyla durdu, oysa çalışıyor olmalı",
+  "docker.unhealthy": "sağlık kontrolü başarısız (ayakta: {uptime})",
+  "docker.restart_loop": "{count} kez yeniden başlatıldı (sınır {max}), yalnızca {uptime} süredir ayakta",
+  "docker.health_starting": "{uptime} sonra hâlâ sağlıklı değil",
+  "docker.paused": "konteyner duraklatılmış",
+  "docker.required_missing": "gerekli '{name}' konteyneri çalışmıyor",
+  "docker.unavailable": "Docker'a bağlanılamıyor: {error}",
+
+  "disk.ok": "%{percent} dolu, {free} boş (%{inodes} inode)",
+  "disk.space_warn": "dolmak üzere: %{percent} dolu, {free} boş",
+  "disk.space_crit": "neredeyse dolu: %{percent} dolu, {free} boş",
+  "disk.inodes_warn": "inode sayısı azalıyor: %{percent} dolu, {free} boş",
+  "disk.inodes_crit": "yakında inode kalmayacak: %{percent} dolu, {free} boş",
+  "disk.unreadable": "{mount} okunamıyor: {error}",
+
+  "backup.ok": "son yedek {file}, {age} önce alınmış, {size}",
+  "backup.missing": "{path} konumunda yedek dosyası bulunamadı",
+  "backup.stale": "son yedek {file} {age} önce alınmış (sınır {max_age})",
+  "backup.empty": "son yedek {file} boş ({age} önce alınmış)",
+  "backup.too_small": "son yedek {file} yalnızca {size} (en az {min_size})"
+}

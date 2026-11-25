@@ -1,0 +1,23 @@
+{
+  "http.ok": "HTTP {code} in {ms} ms",
+  "http.slow": "HTTP {code}, but slow: {ms} ms (limit {limit} ms)",
+  "http.bad_status": "HTTP {code} in {ms} ms, expected {max} or lower",
+  "http.missing_text": "HTTP {code}, but the page does not contain \"{text}\"",
+  "http.timeout": "no answer within {timeout} ms",
+  "http.error": "request failed: {error}",
+
+  "tls.ok": "certificate valid, expires in {days} days ({date}), issued by {issuer}",
+  "tls.expires_soon": "expires in {days} days ({date}), issued by {issuer}",
+  "tls.expires_critical": "expires in only {days} days ({date}), issued by {issuer}",
+  "tls.expired": "certificate expired {days} days ago ({date})",
+  "tls.untrusted": "certificate is not trusted: {error}",
+  "tls.hostname_mismatch": "certificate does not match this host name: {error}",
+  "tls.handshake_failed": "TLS connection failed: {error}",
+
+  "domain.ok": "registration valid, expires in {days} days ({date})",
+  "domain.expires_soon": "registration expires in {days} days ({date})",
+  "domain.expires_critical": "registration expires in only {days} days ({date})",
+  "domain.expired": "registration expired {days} days ago ({date})",
+  "domain.lookup_failed": "could not look up the expiry date: {error}",
+  "domain.no_expiry": "the registry does not publish an expiry date"
+}

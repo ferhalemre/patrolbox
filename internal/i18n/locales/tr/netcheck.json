@@ -1,0 +1,23 @@
+{
+  "http.ok": "HTTP {code}, {ms} ms",
+  "http.slow": "HTTP {code}, ama yavaş: {ms} ms (sınır {limit} ms)",
+  "http.bad_status": "HTTP {code}, {ms} ms; beklenen {max} veya daha düşük",
+  "http.missing_text": "HTTP {code}, ama sayfada \"{text}\" yok",
+  "http.timeout": "{timeout} ms içinde yanıt yok",
+  "http.error": "istek başarısız: {error}",
+
+  "tls.ok": "sertifika geçerli, {days} gün sonra sona erecek ({date}), veren: {issuer}",
+  "tls.expires_soon": "{days} gün sonra sona erecek ({date}), veren: {issuer}",
+  "tls.expires_critical": "yalnızca {days} gün sonra sona erecek ({date}), veren: {issuer}",
+  "tls.expired": "sertifika {days} gün önce sona erdi ({date})",
+  "tls.untrusted": "sertifika güvenilir değil: {error}",
+  "tls.hostname_mismatch": "sertifika bu sunucu adıyla eşleşmiyor: {error}",
+  "tls.handshake_failed": "TLS bağlantısı başarısız: {error}",
+
+  "domain.ok": "kayıt geçerli, {days} gün sonra sona erecek ({date})",
+  "domain.expires_soon": "kaydın sona ermesine {days} gün kaldı ({date})",
+  "domain.expires_critical": "kaydın sona ermesine yalnızca {days} gün kaldı ({date})",
+  "domain.expired": "kayıt {days} gün önce sona erdi ({date})",
+  "domain.lookup_failed": "son kullanma tarihi sorgulanamadı: {error}",
+  "domain.no_expiry": "kayıt kuruluşu bir son kullanma tarihi yayımlamıyor"
+}

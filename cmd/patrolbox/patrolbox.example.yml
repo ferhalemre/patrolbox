@@ -1,0 +1,84 @@
+# patrolbox configuration.
+# Every setting is optional: delete what you do not need.
+# ${NAME} is replaced from the environment, so secrets can stay out of this file.
+
+# Language of the output and notifications. Run `patrolbox languages` for the list.
+# Empty = taken from the system (LANG).
+lang: ""
+
+# Where patrolbox remembers the last result of each check.
+state_file: /var/lib/patrolbox/state.json
+
+# Sites are found automatically. Add hosts that discovery cannot see:
+sites: []
+#  - example.com
+#  - shop.example.com:8443
+
+# Hosts to ignore. Wildcards are allowed.
+exclude: []
+#  - "staging.*"
+
+discover:
+  caddy: auto    # auto | off | /path/to/Caddyfile
+  nginx: auto    # auto | off | /path/to/nginx.conf
+  docker: true   # read caddy-docker-proxy and Traefik labels
+
+http:
+  enabled: true
+  timeout: 10s
+  slow: 3s         # slower than this is a warning
+  max_code: 399    # highest status code that still counts as "up"
+  contain: ""      # text every page must contain (empty = off)
+
+tls:
+  enabled: true
+  warn_days: 14
+  crit_days: 5
+
+domain:            # registration expiry, via RDAP
+  enabled: true
+  warn_days: 30
+  crit_days: 7
+
+docker:
+  enabled: true
+  socket: /var/run/docker.sock
+  max_restarts: 3
+  ignore: []       # container names to skip, wildcards allowed
+  require: []      # containers that must be running
+
+disk:
+  enabled: true
+  warn_percent: 80
+  crit_percent: 90
+  mounts: []       # empty = every real filesystem
+
+# The newest file under each path must be fresh and not empty.
+backups: []
+#  - name: database
+#    path: /var/backups/db/*.sql.gz
+#    max_age: 26h
+#    min_size: 10000   # bytes
+
+notify:
+  # Remind about a problem that is still there after this long. 0 = only when something changes.
+  repeat: 24h
+
+  telegram:
+    bot_token: ""    # from @BotFather
+    chat_id: ""
+  slack:
+    url: ""          # incoming webhook URL
+  discord:
+    url: ""          # webhook URL
+  ntfy:
+    url: ""          # e.g. https://ntfy.sh/my-topic
+  webhook:
+    url: ""          # receives JSON: title, body, level, fields
+  email:
+    host: ""
+    port: 587
+    username: ""
+    password: ""
+    from: ""
+    to: []

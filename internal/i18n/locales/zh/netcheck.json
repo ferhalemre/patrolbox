@@ -1,0 +1,23 @@
+{
+  "http.ok": "HTTP {code}，耗时 {ms} 毫秒",
+  "http.slow": "HTTP {code}，但响应慢：{ms} 毫秒（上限 {limit} 毫秒）",
+  "http.bad_status": "HTTP {code}，耗时 {ms} 毫秒，应为 {max} 或更低",
+  "http.missing_text": "HTTP {code}，但页面不包含 \"{text}\"",
+  "http.timeout": "{timeout} 毫秒内无响应",
+  "http.error": "请求失败：{error}",
+
+  "tls.ok": "证书有效，{days} 天后到期（{date}），签发者：{issuer}",
+  "tls.expires_soon": "{days} 天后到期（{date}），签发者：{issuer}",
+  "tls.expires_critical": "仅剩 {days} 天到期（{date}），签发者：{issuer}",
+  "tls.expired": "证书已于 {days} 天前过期（{date}）",
+  "tls.untrusted": "证书不受信任：{error}",
+  "tls.hostname_mismatch": "证书与此主机名不匹配：{error}",
+  "tls.handshake_failed": "TLS 连接失败：{error}",
+
+  "domain.ok": "注册有效，{days} 天后到期（{date}）",
+  "domain.expires_soon": "注册将在 {days} 天后到期（{date}）",
+  "domain.expires_critical": "注册仅剩 {days} 天到期（{date}）",
+  "domain.expired": "注册已于 {days} 天前过期（{date}）",
+  "domain.lookup_failed": "无法查询到期日期：{error}",
+  "domain.no_expiry": "注册机构未公布到期日期"
+}

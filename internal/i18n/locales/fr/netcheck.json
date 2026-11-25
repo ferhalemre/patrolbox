@@ -1,0 +1,23 @@
+{
+  "http.ok": "HTTP {code} en {ms} ms",
+  "http.slow": "HTTP {code}, mais lent : {ms} ms (limite {limit} ms)",
+  "http.bad_status": "HTTP {code} en {ms} ms, attendu {max} ou moins",
+  "http.missing_text": "HTTP {code}, mais la page ne contient pas \"{text}\"",
+  "http.timeout": "pas de réponse dans les {timeout} ms",
+  "http.error": "requête échouée : {error}",
+
+  "tls.ok": "certificat valide, expire dans {days} jours ({date}), émis par {issuer}",
+  "tls.expires_soon": "expire dans {days} jours ({date}), émis par {issuer}",
+  "tls.expires_critical": "expire dans seulement {days} jours ({date}), émis par {issuer}",
+  "tls.expired": "certificat expiré depuis {days} jours ({date})",
+  "tls.untrusted": "certificat non approuvé : {error}",
+  "tls.hostname_mismatch": "le certificat ne correspond pas à ce nom d'hôte : {error}",
+  "tls.handshake_failed": "échec de la connexion TLS : {error}",
+
+  "domain.ok": "enregistrement valide, expire dans {days} jours ({date})",
+  "domain.expires_soon": "l'enregistrement expire dans {days} jours ({date})",
+  "domain.expires_critical": "l'enregistrement expire dans seulement {days} jours ({date})",
+  "domain.expired": "enregistrement expiré depuis {days} jours ({date})",
+  "domain.lookup_failed": "impossible de vérifier la date d'expiration : {error}",
+  "domain.no_expiry": "le registre ne publie pas de date d'expiration"
+}

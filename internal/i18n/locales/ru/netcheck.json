@@ -1,0 +1,23 @@
+{
+  "http.ok": "HTTP {code}, {ms} мс",
+  "http.slow": "HTTP {code}, но медленно: {ms} мс (лимит {limit} мс)",
+  "http.bad_status": "HTTP {code}, {ms} мс, ожидался код {max} или ниже",
+  "http.missing_text": "HTTP {code}, но на странице нет текста \"{text}\"",
+  "http.timeout": "нет ответа за {timeout} мс",
+  "http.error": "ошибка запроса: {error}",
+
+  "tls.ok": "сертификат действителен, истекает через {days} дн. ({date}), выдан: {issuer}",
+  "tls.expires_soon": "истекает через {days} дн. ({date}), выдан: {issuer}",
+  "tls.expires_critical": "истекает уже через {days} дн. ({date}), выдан: {issuer}",
+  "tls.expired": "сертификат истёк {days} дн. назад ({date})",
+  "tls.untrusted": "сертификат не доверенный: {error}",
+  "tls.hostname_mismatch": "сертификат не соответствует имени этого хоста: {error}",
+  "tls.handshake_failed": "не удалось установить TLS-соединение: {error}",
+
+  "domain.ok": "регистрация действительна, истекает через {days} дн. ({date})",
+  "domain.expires_soon": "регистрация истекает через {days} дн. ({date})",
+  "domain.expires_critical": "регистрация истекает уже через {days} дн. ({date})",
+  "domain.expired": "регистрация истекла {days} дн. назад ({date})",
+  "domain.lookup_failed": "не удалось узнать дату окончания: {error}",
+  "domain.no_expiry": "реестр не публикует дату окончания"
+}

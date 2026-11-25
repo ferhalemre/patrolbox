@@ -1,0 +1,25 @@
+{
+  "docker.ok": "em execução, ativo há {uptime}",
+  "docker.restarting": "preso reiniciando (reiniciado {count} vez(es))",
+  "docker.oom": "encerrado por falta de memória",
+  "docker.exited": "parado com código de saída {code}, mas deveria estar em execução",
+  "docker.unhealthy": "verificação de saúde falhando (ativo há {uptime})",
+  "docker.restart_loop": "reiniciado {count} vez(es) (limite {max}), ativo há apenas {uptime}",
+  "docker.health_starting": "ainda não saudável após {uptime}",
+  "docker.paused": "contêiner pausado",
+  "docker.required_missing": "contêiner obrigatório '{name}' não está em execução",
+  "docker.unavailable": "não é possível conectar ao Docker: {error}",
+
+  "disk.ok": "{percent}% usado, {free} livre ({inodes}% dos inodes)",
+  "disk.space_warn": "enchendo: {percent}% usado, {free} livre",
+  "disk.space_crit": "quase cheio: {percent}% usado, {free} livre",
+  "disk.inodes_warn": "poucos inodes disponíveis: {percent}% usado, {free} livre",
+  "disk.inodes_crit": "inodes quase esgotados: {percent}% usado, {free} livre",
+  "disk.unreadable": "não é possível ler {mount}: {error}",
+
+  "backup.ok": "último backup {file} com {age} de idade, {size}",
+  "backup.missing": "nenhum arquivo de backup encontrado em {path}",
+  "backup.stale": "último backup {file} com {age} de idade (limite {max_age})",
+  "backup.empty": "último backup {file} está vazio ({age} de idade)",
+  "backup.too_small": "último backup {file} tem apenas {size} (mínimo {min_size})"
+}

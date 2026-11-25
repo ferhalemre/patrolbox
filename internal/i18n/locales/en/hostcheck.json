@@ -1,0 +1,25 @@
+{
+  "docker.ok": "running, up {uptime}",
+  "docker.restarting": "stuck restarting (restarted {count} times)",
+  "docker.oom": "killed because it ran out of memory",
+  "docker.exited": "stopped with exit code {code} but should be running",
+  "docker.unhealthy": "health check is failing (up {uptime})",
+  "docker.restart_loop": "restarted {count} times (limit {max}), up only {uptime}",
+  "docker.health_starting": "still not healthy after {uptime}",
+  "docker.paused": "container is paused",
+  "docker.required_missing": "required container '{name}' is not running",
+  "docker.unavailable": "cannot talk to Docker: {error}",
+
+  "disk.ok": "{percent}% used, {free} free ({inodes}% inodes)",
+  "disk.space_warn": "getting full: {percent}% used, {free} free",
+  "disk.space_crit": "almost full: {percent}% used, {free} free",
+  "disk.inodes_warn": "running low on inodes: {percent}% used, {free} free",
+  "disk.inodes_crit": "out of inodes soon: {percent}% used, {free} free",
+  "disk.unreadable": "cannot read {mount}: {error}",
+
+  "backup.ok": "latest backup {file} is {age} old, {size}",
+  "backup.missing": "no backup files found at {path}",
+  "backup.stale": "latest backup {file} is {age} old (limit {max_age})",
+  "backup.empty": "latest backup {file} is empty ({age} old)",
+  "backup.too_small": "latest backup {file} is only {size} (minimum {min_size})"
+}

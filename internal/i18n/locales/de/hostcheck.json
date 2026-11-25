@@ -1,0 +1,25 @@
+{
+  "docker.ok": "läuft, seit {uptime} aktiv",
+  "docker.restarting": "hängt in einer Neustartschleife (bereits {count}-mal neu gestartet)",
+  "docker.oom": "wegen Speichermangels beendet",
+  "docker.exited": "mit Exit-Code {code} gestoppt, soll aber laufen",
+  "docker.unhealthy": "Health-Check schlägt fehl (seit {uptime} aktiv)",
+  "docker.restart_loop": "{count}-mal neu gestartet (Limit {max}), erst seit {uptime} aktiv",
+  "docker.health_starting": "nach {uptime} immer noch nicht gesund",
+  "docker.paused": "Container ist pausiert",
+  "docker.required_missing": "benötigter Container '{name}' läuft nicht",
+  "docker.unavailable": "keine Verbindung zu Docker möglich: {error}",
+
+  "disk.ok": "{percent} % belegt, {free} frei ({inodes} % Inodes)",
+  "disk.space_warn": "wird voll: {percent} % belegt, {free} frei",
+  "disk.space_crit": "fast voll: {percent} % belegt, {free} frei",
+  "disk.inodes_warn": "Inodes werden knapp: {percent} % belegt, {free} frei",
+  "disk.inodes_crit": "Inodes bald erschöpft: {percent} % belegt, {free} frei",
+  "disk.unreadable": "{mount} kann nicht gelesen werden: {error}",
+
+  "backup.ok": "neuestes Backup {file} ist {age} alt, {size}",
+  "backup.missing": "keine Backup-Dateien unter {path} gefunden",
+  "backup.stale": "neuestes Backup {file} ist {age} alt (Limit {max_age})",
+  "backup.empty": "neuestes Backup {file} ist leer ({age} alt)",
+  "backup.too_small": "neuestes Backup {file} ist nur {size} groß (Minimum {min_size})"
+}

@@ -1,0 +1,23 @@
+{
+  "http.ok": "HTTP {code} in {ms} ms",
+  "http.slow": "HTTP {code}, aber langsam: {ms} ms (Limit {limit} ms)",
+  "http.bad_status": "HTTP {code} in {ms} ms, erwartet {max} oder niedriger",
+  "http.missing_text": "HTTP {code}, aber die Seite enthält \"{text}\" nicht",
+  "http.timeout": "keine Antwort innerhalb von {timeout} ms",
+  "http.error": "Anfrage fehlgeschlagen: {error}",
+
+  "tls.ok": "Zertifikat gültig, läuft in {days} Tagen ab ({date}), ausgestellt von {issuer}",
+  "tls.expires_soon": "läuft in {days} Tagen ab ({date}), ausgestellt von {issuer}",
+  "tls.expires_critical": "läuft in nur {days} Tagen ab ({date}), ausgestellt von {issuer}",
+  "tls.expired": "Zertifikat vor {days} Tagen abgelaufen ({date})",
+  "tls.untrusted": "Zertifikat ist nicht vertrauenswürdig: {error}",
+  "tls.hostname_mismatch": "Zertifikat passt nicht zu diesem Hostnamen: {error}",
+  "tls.handshake_failed": "TLS-Verbindung fehlgeschlagen: {error}",
+
+  "domain.ok": "Registrierung gültig, läuft in {days} Tagen ab ({date})",
+  "domain.expires_soon": "Registrierung läuft in {days} Tagen ab ({date})",
+  "domain.expires_critical": "Registrierung läuft in nur {days} Tagen ab ({date})",
+  "domain.expired": "Registrierung vor {days} Tagen abgelaufen ({date})",
+  "domain.lookup_failed": "Ablaufdatum konnte nicht abgefragt werden: {error}",
+  "domain.no_expiry": "die Registrierungsstelle veröffentlicht kein Ablaufdatum"
+}
